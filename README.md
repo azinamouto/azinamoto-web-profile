@@ -49,20 +49,6 @@ Rather than presenting projects as a collection of screenshots, SEIJAKU aims to 
 
 ## 02. About the Developer — 開発者
 
-```text
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│  USER       AJ Rienze Josol                      │
-│  ALIAS      azinamouto                           │
-│  ROLE       Founder & CTO                        │
-│  COMPANY    ALZA.Net IT Solutions                │
-│  FOCUS      Full-Stack / Systems Architecture    │
-│  LOCATION   Bohol, Philippines                   │
-│                                                  │
-│  "Build quietly. Engineer deliberately."        │
-│                                                  │
-└──────────────────────────────────────────────────┘
-```
 
 I'm AJ Rienze, a full-stack developer and BS Information Systems student from Bohol, Philippines.
 
@@ -118,55 +104,7 @@ The portfolio is designed around a modern React and TypeScript architecture.
 
 ---
 
-## 05. Architecture — 構造
-
-```text
-                         VISITOR
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │                       │
-                │   REACT APPLICATION   │
-                │                       │
-                └───────────┬───────────┘
-                            │
-             ┌──────────────┼──────────────┐
-             │              │              │
-             ▼              ▼              ▼
-        DESIGN SYSTEM   CONTENT LAYER   INTERACTIONS
-             │              │              │
-        Components       Projects       Animation
-        Typography       Experience     Parallax
-        Materials        Skills         Navigation
-        Responsive UI    Case Studies   Visualizations
-             │              │              │
-             └──────────────┼──────────────┘
-                            │
-                            ▼
-                   PORTFOLIO ROUTES
-                            │
-                    Optional API
-                            │
-                            ▼
-                   ┌────────────────┐
-                   │ NESTJS BACKEND │
-                   │ Contact / API  │
-                   └────────────────┘
-```
-
-### Architectural Goals
-
-- Separate content from presentation.
-- Reuse components and design tokens.
-- Keep project information structured.
-- Minimize unnecessary dependencies.
-- Load complex visualizations only when needed.
-- Support responsive and accessible interactions.
-- Maintain reliable build and testing workflows.
-
----
-
-## 06. Featured Projects — 作品
+## 05. Featured Projects — 作品
 
 My work spans government-oriented systems, developer infrastructure, security tooling, and frontend engineering.
 
@@ -229,7 +167,7 @@ Project descriptions represent different stages of development. Inclusion does n
 
 ---
 
-## 07. Portfolio Experience — 体験
+## 06. Portfolio Experience — 体験
 
 The portfolio is designed around meaningful, interactive exploration.
 
