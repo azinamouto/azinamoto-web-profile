@@ -1,7 +1,7 @@
 
  <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:14191E,50:36434E,100:14191E&section=header&text=SEIJAKU&fontSize=56&fontColor=FFFFFF&fontAlignY=38&desc=%E9%9D%99%E5%AF%82%20%2F%20THE%20QUIET%20ENGINEER&descAlignY=61&descSize=15&animation=fadeIn" width="100%" alt="SEIJAKU Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:14191E,50:36434E,100:14191E&section=header&text=AZINAMOUTO&fontSize=56&fontColor=FFFFFF&fontAlignY=38&desc=%E9%9D%99%E5%AF%82%20%2F%20ANIME%20x%20ENGINEER&descAlignY=61&descSize=15&animation=fadeIn" width="100%" alt="SEIJAKU Header"/>
 
 ### `静寂 — SEIJAKU`
 
