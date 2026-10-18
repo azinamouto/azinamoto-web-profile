@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #f8f9fa;
+    --bg-secondary: #f1f3f5;
+    --surface: #ffffff;
+    --surface-soft: #f6f7f8;
+    --surface-elevated: #fcfcfd;
+
+    --text-primary: #17191c;
+    --text-secondary: #505962;
+    --text-muted: #6b7580;
+
+    --accent: #647c8c;
+    --accent-soft: #e4ebef;
+    --accent-strong: #3d5768;
+
+    --border-subtle: rgba(25, 35, 45, 0.08);
+    --border-strong: rgba(25, 35, 45, 0.16);
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+  }
+
+  .dark {
+    --bg-main: #0c1015;
+    --bg-secondary: #141a22;
+    --surface: #121820;
+    --surface-soft: #19212c;
+    --surface-elevated: #1f2835;
+
+    --text-primary: #f2f5f8;
+    --text-secondary: #9daec0;
+    --text-muted: #728294;
+
+    --accent: #8ea8bc;
+    --accent-soft: #1e2b3a;
+    --accent-strong: #bfd5e6;
+
+    --border-subtle: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.18);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+.font-jp {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Material A — Recessed / Inset Shadow */
+.shadow-inset {
+  background-color: var(--bg-secondary);
+  box-shadow:
+    inset 4px 4px 9px rgba(160, 172, 184, 0.22),
+    inset -4px -4px 9px rgba(255, 255, 255, 0.95);
+}
+
+.dark .shadow-inset {
+  background-color: #0f151c;
+  box-shadow:
+    inset 3px 3px 8px rgba(0, 0, 0, 0.6),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.03);
+}
+
+/* Material B — Dual: Inset + Drop Shadow */
+.shadow-dual {
+  background-color: var(--surface-soft);
+  box-shadow:
+    inset 2px 2px 4px rgba(165, 175, 185, 0.15),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.90),
+    6px 10px 22px rgba(28, 36, 44, 0.06);
+}
+
+.dark .shadow-dual {
+  background-color: #161e28;
+  box-shadow:
+    inset 1px 1px 3px rgba(0, 0, 0, 0.45),
+    inset -1px -1px 3px rgba(255, 255, 255, 0.04),
+    6px 10px 22px rgba(0, 0, 0, 0.45);
+}
+
+/* Material C — Soft Drop Shadow (Elevated) */
+.shadow-elevated {
+  background-color: var(--surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow:
+    0 2px 4px rgba(20, 30, 40, 0.025),
+    0 10px 26px rgba(20, 30, 40, 0.05),
+    0 24px 50px rgba(20, 30, 40, 0.035);
+}
+
+.dark .shadow-elevated {
+  background-color: #131a23;
+  border: 1px solid var(--border-subtle);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    0 12px 30px rgba(0, 0, 0, 0.45),
+    0 24px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtle Quiet Shadow */
+.shadow-subtle {
+  box-shadow: 0 1px 3px rgba(20, 30, 40, 0.04), 0 4px 12px rgba(20, 30, 40, 0.03);
+}
+
+.dark .shadow-subtle {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* Glass Surface with controlled blur & borders */
+.surface-glass {
+  background-color: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(25, 35, 45, 0.07);
+}
+
+.dark .surface-glass {
+  background-color: rgba(18, 24, 32, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
